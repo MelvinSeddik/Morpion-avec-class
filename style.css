@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1000px;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 100%;
+}
+
+.game-menu-container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, label{
+    margin-bottom: 1em;
+}
+
+select{
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+#start-game{
+    margin: 0 auto;
+}
+
+#name1, #name2{
+    margin-right: 20px;
+}
+
+.fa-edit{
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Reggae One', cursive;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+}
+
+tr{
+    width: 600px;
+    height: 33%;
+}
+
+td{
+    width: 33%;
+    height: 33%;
+    border: 2px solid rgb(29, 0, 29);
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Reggae One', cursive;
+    
+}
+
+td:hover{
+    backdrop-filter: contrast(115%);
+}
+
+table{
+    width: 600px;
+    height: 100%;
+    background: url("Cloud-Summer-Sky.jpg");
+}
+
+#container{
+    border: 2px solid black;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#p1, #p2{
+    background: #eeeeee;
+    width: 100%;
+    text-align: center;
+}
+
+#p1 span, #p2 span{
+    font-family: 'Reggae One', cursive;
+}
+
+#p1 h2, #p2 h2{
+    font-size: 3em;
+}
+
+#message{
+    text-align: center;
+    font-size: 3em;
+}
+
+.score{
+    font-size: 3em;
+}
+
+button{
+    background: green;
+    color: white;
+    padding: 10px 24px;
+    display: block;
+    margin: 20px auto;
+}

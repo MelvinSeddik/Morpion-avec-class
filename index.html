@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-menu column">
+        <div class="game-menu-container column">
+            <div class="column">
+                <label for="j1">Joueur 1 -></label>
+                <input type="text" name="j1" id="j1">
+            </div>
+
+            <div class="column">
+                <label for="s1">Choisissez votre symbole!</label>
+                <select name="s1" id="s1">
+                    <option value="X">X</option>
+                    <option value="O">O</option>
+                    <option value="😂" class="f1">😂</option>
+                    <option value="😬" class="f2">😬</option>
+                </select>
+            </div>
+
+            <div class="column">
+                <label for="j2">Joueur 2 -></label>
+                <input type="text" name="j2" id="j2">
+            </div>
+
+            <div class="column">
+                <label for="s2">Choisissez votre symbole!</label>
+                <select name="s2" id="s2">
+                    <option value="X">X</option>
+                    <option value="O">O</option>
+                    <option value="😂" class="f1">😂</option>
+                    <option value="😬" class="f2">😬</option>
+                </select>
+            </div>
+
+            <input type="submit" id="start-game" value="Commencer la partie">
+        </div>
+    </div>
+
+    <h1>JEU DU MORPION</h1>
+    <section id="container" class="flex">
+        <div id="p1">
+
+                <h2 id="name1">JOUEUR 1</h2>
+
+            <h2>Symbole : <span id="s1-display">X</span></h2>
+            <p class="score">Score : 0</p>
+        </div>
+
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div id="p2">
+
+                <h2 id="name2">JOUEUR 2</h2>
+
+            <h2>Symbole : <span id="s2-display">O</span></h2>
+            <p class="score">Score : 0</p>
+        </div>
+
+    </section>
+
+    <p id="message"></p>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
